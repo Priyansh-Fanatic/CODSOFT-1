@@ -34,13 +34,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 clf = LogisticRegression()
 clf.fit(X_train, y_train)
 
-
 y_pred = clf.predict(X_test)
-#print("Accuracy:", accuracy_score(y_test, y_pred))
-#print("Classification Report:")
-#print(classification_report(y_test, y_pred))
-#print("Confusion Matrix:")
-#print(confusion_matrix(y_test, y_pred))
 
 new_sms = input("Enter your message : ")
 print("\nThe entered mesage is : ",predict_spam(new_sms))  # Output: 'spam'
